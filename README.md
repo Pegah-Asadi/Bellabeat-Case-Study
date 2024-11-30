@@ -47,15 +47,19 @@ The datasource includes 17 .csv files in total. Of these, 15 datasets are in a l
 **Reliable**
 - *Evaluation*: This dataset, sourced from Mobius on Kaggle, is generally reliable but has limitations. Fitbit's accuracy in tracking heart rate and sleep stages may vary, and self-selection bias could skew results as data comes from only 30 consenting users, potentially more health-conscious than average. Additionally, the small sample size and two-month collection period limit its representation of Fitbit's broader user base.
 - *Assessment*: **Low reliability** due to limited study group, self-selection bias and potential inaccuracies from device limitations.
+
 **Original**
 - *Evaluation*: The data is collected directly from Fitbit devices, ensuring originality since it captures raw, minute-level physical activity, heart rate, and sleep data from the users. Mobius has aggregated this data but is not the original collector (Fitbit is).
 - *Assessment*: **High originality**, with minimal alterations from wearables to aggregation by Mobius.
+
 **Comprehensive**
 - *Evaluation*: The dataset provides minute-level data on activity, heart rate, and sleep over two months, offering detailed insights into short-term health trends. However, its two-month span and 30 participants limit long-term pattern analysis.
 - *Assessment*: **Moderately comprehensive** due to high granularity but limited scope.
+
 **Current**
 - *Evaluation*: The data was collected in late 2016. While it provides a detailed snapshot, the age of the data (over seven years) means it may not reflect current health or activity trends and might lack newer data dimensions from updated Fitbit devices. Although it is updated annually and the last update is for 8 months ago.
 - *Assessment*: **Low currency** due to the data source’s collection date.
+
 **Cited**
 - *Evaluation*: The dataset is hosted on Kaggle and attributed to Mobius, with data submission via Amazon Mechanical Turk. However, there may be limited peer-reviewed or third-party citations directly related to this specific dataset, which can impact citation credibility.
 - *Assessment*: **Moderately cited**
