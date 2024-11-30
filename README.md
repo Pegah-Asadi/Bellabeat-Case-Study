@@ -12,9 +12,7 @@ This case study analyzes smart device fitness data to uncover trends and provide
 
 ### Repository Structure
 - **Process**: Steps for cleaning datasets and analyzing the data.
-- **Analysis**: Python scripts and notebooks used for data analysis.
-- **Visuals**: Charts and graphs created during the analysis.
-- **Findings**: Insights, interpretations, and recommendations.
+- **Analysis**: Python scripts and notebooks used for data analysis, including Charts and graphs created during the analysis and the insights drived from each analysis.
 - **Data**: Links to external datasets.
 
 ### Key Findings
@@ -150,7 +148,7 @@ merged_data = pd.merge(dataset1, dataset2, on=['common_key', 'date_key'])
 
 ## 5. Share
 
-**You can find the visualizations of the analysis phase with the related Python codes and interpretation in analysis folder, Analysis.ipynb file.**
+You can find the visualizations of the analysis phase with the related Python codes and insights in analysis folder, [Analysis.ipynb file](https://github.com/Pegah-Asadi/Bellabeat-Case-Study/blob/main/analysis/Analysis.ipynb).
 
 ### Insights:
 **Positive Correlation Between Steps and Calories:**
