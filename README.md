@@ -1,35 +1,38 @@
-# Bellabeat-Case-Study
-My case study on Bellabeat fitness data
+# 🌟 Bellabeat-Case-Study
+📊 Analyzing fitness data to provide actionable insights for Bellabeat
 
 ## Summary
 This case study analyzes smart device fitness data to uncover trends and provide actionable insights for Bellabeat, a high-tech wellness company. The goal was to guide Bellabeat's marketing strategy by understanding consumer behavior and identifying growth opportunities for its products.
 
-### Objectives
-1. Analyze user behavior trends in smart device usage.
-2. Provide actionable marketing strategy recommendations.
-3. Focus insights on enhancing a specific Bellabeat product.
-4. Showcase data analysis and visualization skills.
+## 🎯 Objectives
+1. **Analyze** user behavior trends in smart device usage.
+2. **Recommend** actionable marketing strategies.
+3. **Enhance** a specific Bellabeat product with data insights.
+4. **Showcase** data analysis and visualization expertise.
 
-### Repository Structure
-- **Process**: Steps for cleaning datasets and analyzing the data.
-- **Analysis**: Python scripts and notebooks used for data analysis, including Charts and graphs created during the analysis and the insights drived from each analysis.
-- **Data**: Links to external datasets.
+## 📂 Repository Structure
+| Section      | Description                                                                |
+|--------------|----------------------------------------------------------------------------|
+| **Process**  | Steps for data cleaning and analysis.                                      |
+| **Analysis** | Python scripts, notebooks, charts, and insights from the analysis.         |
+| **Data**     | Links to external datasets.                                                |
 
-### Key Findings
-1. Positive Correlation Between Steps and Calories: Increased physical activity, measured by steps, directly correlates with higher calorie burn.
-2. Peak Activity Hours: Calorie burn peaks in the late afternoon (5-7 PM) and declines sharply after 8 PM, aligning with common daily routines.
-3. User Segmentation: A significant proportion of users are sedentary or lightly active, highlighting opportunities to target low-activity users for increased engagement.
-4. Activity Distribution: Users are predominantly engaged in light activities, with minimal participation in moderate or intense activities.
-5. Weekend Patterns: Saturdays show the highest activity levels, while Sundays see a notable decline, reflecting a rest day for most users.
-6. Consistent Weekday Sleep Deficit: Weekday sleep averages fall below the recommended 8 hours, while weekend sleep exceeds it.
 
-### Recommendations
-1. Engage Low-Activity Users: Launch motivational campaigns, challenges, or rewards tailored for sedentary and lightly active users to increase activity levels.
-2. Capitalize on Peak Hours: Develop targeted programs or reminders during peak activity periods (late afternoon) to align with user habits.
-3. Promote Weekend Activity: Encourage light activities or guided exercises on Sundays to balance the activity drop and maintain engagement.
-4. Incentivize Weekday Sleep: Introduce features that encourage consistent sleep routines throughout the week, such as reminders or rewards for hitting sleep goals.
-5. Highlight Personalized Insights: Use Bellabeat's data capabilities to provide users with actionable recommendations on optimal activity times and routines for calorie burn and fitness improvements.
-6. Develop Gamified Features: Create gamified challenges or badges to encourage users to participate in higher-intensity activities, driving engagement and calorie burn.
+## 🔍 Key Findings
+1. **Positive Correlation Between Steps and Calories:** More steps lead to higher calorie burn.
+2. **Peak Activity Hours:** Late afternoon (5–7 PM) sees maximum calorie burn.
+3. **User Segmentation:** Many users are sedentary or lightly active, offering growth potential.
+4. **Activity Distribution:** Light activities dominate, with minimal moderate/intense activity.
+5. **Weekend Trends:** Saturdays are most active; Sundays show notable inactivity.
+6. **Weekday Sleep Deficit:** Weekday sleep averages below 8 hours; weekends exceed this.
+
+## ✅ Recommendations
+1. **Target Low-Activity Users:** Launch motivational campaigns with rewards.
+2. **Leverage Peak Hours:** Send notifications during 5–7 PM.
+3. **Promote Sunday Activity:** Encourage light exercises to reduce inactivity.
+4. **Incentivize Sleep:** Introduce rewards for consistent weekday sleep habits.
+5. **Personalized Insights:** Highlight activity trends for better user engagement.
+6. **Gamification Features:** Add challenges and badges to increase engagement.
 
 
 ## 1. Ask
@@ -39,97 +42,170 @@ Identify key usage trends in non-Bellabeat smart device data to understand custo
 
 ## 2. Prepare
 ### 2.1. Data Source
-The dataset used in this case study is **“FitBit Fitness Tracker Data”**. It is generated by respondents to a distributed survey via Amazon Mechanical Turk between 03.12.2016-05.12.2016. This dataset is stored in **Kaggle** and was made available through Mobius. The license of the dataset is “Public Domain”, so this data source is considered as an **open source**.
-
-The datasource includes 17 .csv files in total. Of these, 15 datasets are in a long format. Additionally, 3 of these datasets are also available in a wide format, containing the same data as in their long-format counterparts.
+**Dataset:** FitBit Fitness Tracker Data
+**Source:** Kaggle, provided by Mobius.
+**Format:** 17 .csv files, public domain, gathered via Amazon Mechanical Turk.
+**Data Period: March–May 2016.
 
 ### 2.2. Assessing Data Credibility (ROCC Framework)
-**Reliable**
-- *Evaluation*: This dataset, sourced from Mobius on Kaggle, is generally reliable but has limitations. Fitbit's accuracy in tracking heart rate and sleep stages may vary, and self-selection bias could skew results as data comes from only 30 consenting users, potentially more health-conscious than average. Additionally, the small sample size and two-month collection period limit its representation of Fitbit's broader user base.
-- *Assessment*: **Low reliability** due to limited study group, self-selection bias and potential inaccuracies from device limitations.
+## **2.2. Data Credibility (ROCC Framework)**
 
-**Original**
-- *Evaluation*: The data is collected directly from Fitbit devices, ensuring originality since it captures raw, minute-level physical activity, heart rate, and sleep data from the users. Mobius has aggregated this data but is not the original collector (Fitbit is).
-- *Assessment*: **High originality**, with minimal alterations from wearables to aggregation by Mobius.
+| Aspect            | Assessment                            |
+|-------------------|---------------------------------------|
+| **Reliable**      | Low (small sample size, bias)         |
+| **Original**      | High (direct from Fitbit)             |
+| **Comprehensive** | Moderate (granular but short-term)    |
+| **Current**       | Low (dated from 2016)                 |
+| **Cited**         | Moderate (attributed to Mobius)       |
 
-**Comprehensive**
-- *Evaluation*: The dataset provides minute-level data on activity, heart rate, and sleep over two months, offering detailed insights into short-term health trends. However, its two-month span and 30 participants limit long-term pattern analysis.
-- *Assessment*: **Moderately comprehensive** due to high granularity but limited scope.
-
-**Current**
-- *Evaluation*: The data was collected in late 2016. While it provides a detailed snapshot, the age of the data (over seven years) means it may not reflect current health or activity trends and might lack newer data dimensions from updated Fitbit devices. Although it is updated annually and the last update is for 8 months ago.
-- *Assessment*: **Low currency** due to the data source’s collection date.
-
-**Cited**
-- *Evaluation*: The dataset is hosted on Kaggle and attributed to Mobius, with data submission via Amazon Mechanical Turk. However, there may be limited peer-reviewed or third-party citations directly related to this specific dataset, which can impact citation credibility.
-- *Assessment*: **Moderately cited**
 
 ## 3. Process
-In the process phase of this case study, we focused on ensuring data integrity, conducting a thorough data cleaning process, and documenting each step to facilitate transparent, reproducible analysis.
+The full Python script for data cleaning is available in the [process](https://github.com/Pegah-Asadi/Bellabeat-Case-Study/blob/main/process/data_cleaning.py) folder.
+
+Python was chosen for its robust data handling capabilities, enabling efficient processing and transformation of large datasets.
 
 ### 3.1. Tools and Approach
-We used Python and its libraries, specifically Pandas, for data cleaning and manipulation. Python was chosen for its robust data handling capabilities, which allowed for efficient handling of multiple datasets, transforming data, and verifying data integrity.
-### 3.2. Steps Taken to Ensure Data Integrity and Cleanliness
-The following steps were implemented to prepare the data for analysis.
+- **Programming Language:** Python
+- **Libraries Used:**
+    - **Pandas:** For data manipulation and cleaning.
+    - **Numpy:** For numerical operations.
+    - **Matplotlib/Seaborn:** For exploratory visualizations.
 
-**Loading and Initial Inspection of the Data**
-The data consisted of 18 CSV files, which were inspected individually.
-Using pd.read_csv, each dataset was loaded into a Pandas DataFrame for preliminary exploration, including checks for structural consistency across files.
+### 3.2. Steps for Data Cleaning
+The data cleaning process involved the following steps:
 
-**Removing Duplicates**
-We removed any duplicate entries using drop_duplicates(), ensuring that each observation was unique and accurately represented.
+1. Loading and Inspecting the Data
+- **Action:** Loaded 17 CSV files using pd.read_csv().
+- **Purpose:** Checked for structural consistency across datasets with:
 
-**Handling Missing Values**
-We assessed missing values across each column using isnull().sum(). This helped identify potential gaps in the data, and if it was necessary removed. The same process for NA values using df = df.dropna()
+`df.info()`
 
-**Clean and Rename Columns**
-All column names were converted to lowercase to maintain a uniform naming convention, making them easier to reference in a case-insensitive environment and improving readability.
-By standardizing column names using df.columns = df.columns.str.lower(), we reduced the risk of errors during analysis and ensured a cleaner dataset structure.
+`df.describe()`
 
-**Ensuring Unique Identifiers**
-Unique user identifiers were crucial for analyzing trends and user behavior. We verified the uniqueness of IDs with df['Id'].nunique(), ensuring accurate representation of user activities without redundancies.
+2. Removing Duplicates
+- **Action:** Used drop_duplicates() to eliminate duplicate entries:
 
-**Data Type Conversion**
-Date and Time Conversion:
-Columns representing dates and times, such as ActivityDate and ActivityTime, were converted to appropriate formats for ease of use in temporal analysis.
-For ActivityDate, we used pd.to_datetime() to convert the format, handling errors with errors='coerce' to manage inconsistencies.
-In the case of ActivityTime, which required a 12-hour AM/PM format, the same function was applied to standardize entries across datasets.
+`df = df.drop_duplicates()`
 
-**Rounding Numerical Values**
-In datasets containing numerical values with decimal points, specific columns were rounded to two decimal places using round(2). This step was essential to maintain precision while simplifying numerical comparisons.
+3. Handling Missing Values
+- **Action:** Identified missing values:
 
-**Saving Cleaned Datasets**
-Each cleaned dataset was saved to a designated directory with a standardized naming convention for organized storage and easier future access. The cleaned files were saved as new CSV files using to_csv(), ensuring no modifications were made to the original data.
+`missing_values = df.isnull().sum()`
 
-### 3.3. Challenges Faced
-- Some heart rate data was too granular (minute-level intervals) and needed aggregation to hour-level intervals.
-- Data for certain users was incomplete, limiting analysis.
+Removed rows with missing values if deemed non-critical:
+
+`df = df.dropna()`
+
+- **Purpose:** Addressed gaps to improve data reliability.
+
+4. Standardizing Column Names
+- **Action:** Converted all column names to lowercase for consistency:
+
+`df.columns = df.columns.str.lower()`
+
+- **Purpose:** Simplified column referencing and ensured uniformity.
+
+5. Verifying Unique Identifiers
+- **Action:** Checked the uniqueness of user IDs:
+
+`unique_ids = df['id'].nunique()`
+
+- **Purpose:** Confirmed accurate user representation without redundancies.
+
+6. Converting Data Types
+- **Action:**
+Converted dates using pd.to_datetime():
+
+`df['date'] = pd.to_datetime(df['date'], errors='coerce')`
+Standardized time formats for temporal analysis.
+
+- **Purpose:** Enabled efficient date/time-based operations.
+
+7. Rounding Numerical Values
+- **Action:** Rounded numerical columns to two decimal places:
+
+`df['column_name'] = df['column_name'].round(2)`
+
+- **Purpose:** Simplified comparisons without sacrificing precision.
+
+8. Saving Cleaned Datasets
+- **Action:** Saved cleaned datasets with descriptive names:
+
+`df.to_csv('cleaned_data.csv', index=False)`
+
+- **Purpose:** Ensured reproducibility and retained original raw files.
+
+### 3.3. Challenges
+- Granularity of Heart Rate Data: Minute-level intervals required aggregation to hourly intervals.
+- Incomplete Data: Missing records for certain users limited some analyses.
+
 
 ## 4. Analyze
+In this phase, we performed detailed data exploration and analysis to uncover insights and trends. Below are the steps and technical details of the analysis process.
 
-### Steps Taken
+### 4.1 Steps Taken
 1. **Import Necessary Libraries**
-First, import the essential Python libraries (Pandas, Numpy, Seaborn, Matplotlib Pyplot) for data manipulation and visualization.
+
+We started by importing essential Python libraries for data manipulation, analysis, and visualization:
+```python
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+```
+
 2. **Load the Datasets**
-Read the datasets into pandas DataFrames using pd.read_csv().
+
+The datasets were loaded into Pandas DataFrames using pd.read_csv() for efficient handling of tabular data:
+```python
+# Load datasets
+df1 = pd.read_csv('DailyActivity.csv')
+df2 = pd.read_csv('HourlyCalories.csv')
+```
 3. **Combine Datasets**
-Our data is split into two groups:
-Group 1: Contains records from the time period March 12, 2016 (03.12.2016) to April 11, 2016 (04.11.2016).
-Group 2: Contains records from the time period April 12, 2016 (04.12.2016) to May 12, 2016 (05.12.2016).
-Each group represents a different chunk of the overall dataset for the two months. However, to perform a comprehensive analysis covering the entire two-month period, we need to combine these datasets into a single DataFrame. This allows us to work with all the data at once without needing to repeatedly analyze each group separately.
-To combine these two datasets for each type of data (e.g., daily activity, hourly calories), we used **pd.concat()**, a function provided by pandas. 
-Here's why:
-pd.concat() merges multiple DataFrames either row-wise or column-wise. In our case, we combine them row-wise (axis=0) to stack the data from Group 2 below Group 1.
-This operation maintains the structure of the datasets, ensuring that all rows and columns are retained.
+
+The data was split into two groups:
+
+Group 1: Records from March 12, 2016, to April 11, 2016.
+
+Group 2: Records from April 12, 2016, to May 12, 2016.
+
+We used `pd.concat()` to combine these datasets into a single DataFrame for comprehensive analysis:
+```python
+# Combine datasets row-wise
+combined_df = pd.concat([df1, df2], axis=0, ignore_index=True)
+```
+- Key considerations:
+
+  - Row-wise Concatenation (axis=0): Stacked Group 2 below Group 1.
+  - Ignore Index: Ensured seamless row numbering in the combined dataset.
+
 4. **Explore the Data**
-- *Descriptive Statistics*: Use dataset_name.head() to view the first few rows, dataset_name.info() to check the structure, and dataset_name.describe() for a statistical summary of the dataset.
-5. **Merge Datasets if Necessary**
-To analyze data across different time granularities, combine datasets using a common key:
-*Merge datasets on a common identifier*
+
+Basic data exploration helped us understand the dataset structure and identify anomalies:
+```python
+# View basic structure
+combined_df.info()
+
+# Statistical summary
+combined_df.describe()
+
+# Preview the first few rows
+combined_df.head()
+```
+This provided insights into column types, missing values, and descriptive statistics.
+
+5. **Merge Datasets (if Necessary)**
+
+For advanced analysis across multiple time granularities, we merged datasets using common keys like ID and Date:
+```python
+# Merge on a single key
 merged_data = pd.merge(dataset1, dataset2, on='common_key')
 
-*Merge datasets on multiple keys (e.g., ID and date)*
-merged_data = pd.merge(dataset1, dataset2, on=['common_key', 'date_key'])
+# Merge on multiple keys
+merged_data = pd.merge(dataset1, dataset2, on=['id', 'date'])
+```
+
 6. **Exploratory Data Analysis (EDA)**
 - Investigated the relationship between total steps and calories burned, revealing a positive correlation.
 - Analyzed hourly activity and calorie burn patterns to identify peak activity times (late afternoon to early evening).
@@ -155,25 +231,32 @@ merged_data = pd.merge(dataset1, dataset2, on=['common_key', 'date_key'])
 You can find the visualizations of the analysis phase with the related Python codes and insights in analysis folder, [Analysis.ipynb file](https://github.com/Pegah-Asadi/Bellabeat-Case-Study/blob/main/analysis/Analysis.ipynb).
 
 ### Insights:
-**Positive Correlation Between Steps and Calories:**
+- **Positive Correlation Between Steps and Calories:**
+
 Increased steps directly lead to higher calorie expenditure, emphasizing the importance of promoting physical activity.
 
-**Peak Activity and Calorie Burn Hours:**
+- **Peak Activity and Calorie Burn Hours:**
+
 Activity levels and calorie burn peak between 10:00 AM and 7:00 PM, particularly in the late afternoon (5:00–7:00 PM), aligning with typical daily routines.
 
-**Weekday vs. Weekend Patterns:**
+- **Weekday vs. Weekend Patterns:**
+
 Saturday is the most active day, driven by leisure or recreational activities, while Sunday shows a significant dip in activity. Weekday activity is consistent but lower, influenced by workday routines.
 
-**Sleep Patterns:**
+- **Sleep Patterns:**
+
 Weekday sleep consistently falls below the recommended 8 hours, while weekend sleep exceeds it, suggesting recovery from the workweek.
 
-**User Segmentation:**
+- **User Segmentation:**
+
 37% of users are sedentary (<5000 steps/day), highlighting a significant segment for targeted engagement. Only 20% of users are highly active, indicating room for growth in active user numbers.
 
-**User Retention:**
+- **User Retention:**
+
 60% of users are high-use (engaging with the app for over 40 days), demonstrating strong retention, but moderate-use users (34.3%) offer an opportunity for improvement.
 
-**Variance in Calories Burned:**
+- **Variance in Calories Burned:**
+
 Differences in calorie burn for similar activity levels suggest personalization opportunities based on user characteristics like age or metabolism.
 
 ## 6. Act
