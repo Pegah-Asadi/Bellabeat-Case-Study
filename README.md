@@ -37,8 +37,10 @@ This case study analyzes smart device fitness data to uncover trends and provide
 
 ## 1. Ask
 ### Business Task:
-Business task:
-Identify key usage trends in non-Bellabeat smart device data to understand customer needs. Analyze behavioral differences between Bellabeat and non-Bellabeat users, identifying gaps and opportunities. Develop data-driven insights to position Bellabeat’s competitive advantages, guiding targeted campaigns to drive user acquisition and engagement.
+- Identify key usage trends in non-Bellabeat smart device data to understand customer needs.
+- Analyze behavioral differences between Bellabeat and non-Bellabeat users, highlighting gaps and opportunities.
+- Develop data-driven insights to position Bellabeat’s competitive advantages.
+- Guide targeted campaigns to drive user acquisition and engagement
 
 ## 2. Prepare
 ### 2.1. Data Source
@@ -48,7 +50,6 @@ Identify key usage trends in non-Bellabeat smart device data to understand custo
 **Data Period: March–May 2016.
 
 ### 2.2. Assessing Data Credibility (ROCC Framework)
-## **2.2. Data Credibility (ROCC Framework)**
 
 | Aspect            | Assessment                            |
 |-------------------|---------------------------------------|
@@ -74,64 +75,64 @@ Python was chosen for its robust data handling capabilities, enabling efficient 
 ### 3.2. Steps for Data Cleaning
 The data cleaning process involved the following steps:
 
-1. Loading and Inspecting the Data
+**1. Loading and Inspecting the Data**
 - **Action:** Loaded 17 CSV files using pd.read_csv().
 - **Purpose:** Checked for structural consistency across datasets with:
 
-`df.info()`
+   `df.info()`
 
-`df.describe()`
+  `df.describe()`
 
-2. Removing Duplicates
+**2. Removing Duplicates**
 - **Action:** Used drop_duplicates() to eliminate duplicate entries:
 
-`df = df.drop_duplicates()`
+  `df = df.drop_duplicates()`
 
-3. Handling Missing Values
+**3. Handling Missing Values**
 - **Action:** Identified missing values:
 
-`missing_values = df.isnull().sum()`
+  `missing_values = df.isnull().sum()`
 
-Removed rows with missing values if deemed non-critical:
+  Removed rows with missing values if deemed non-critical:
 
-`df = df.dropna()`
+  `df = df.dropna()`
 
 - **Purpose:** Addressed gaps to improve data reliability.
 
-4. Standardizing Column Names
+**4. Standardizing Column Names**
 - **Action:** Converted all column names to lowercase for consistency:
 
-`df.columns = df.columns.str.lower()`
+  `df.columns = df.columns.str.lower()`
 
 - **Purpose:** Simplified column referencing and ensured uniformity.
 
-5. Verifying Unique Identifiers
+**5. Verifying Unique Identifiers**
 - **Action:** Checked the uniqueness of user IDs:
 
-`unique_ids = df['id'].nunique()`
+  `unique_ids = df['id'].nunique()`
 
 - **Purpose:** Confirmed accurate user representation without redundancies.
 
-6. Converting Data Types
+**6. Converting Data Types**
 - **Action:**
 Converted dates using pd.to_datetime():
 
-`df['date'] = pd.to_datetime(df['date'], errors='coerce')`
+  `df['date'] = pd.to_datetime(df['date'], errors='coerce')`
 Standardized time formats for temporal analysis.
 
 - **Purpose:** Enabled efficient date/time-based operations.
 
-7. Rounding Numerical Values
+**7. Rounding Numerical Values**
 - **Action:** Rounded numerical columns to two decimal places:
 
-`df['column_name'] = df['column_name'].round(2)`
+  `df['column_name'] = df['column_name'].round(2)`
 
 - **Purpose:** Simplified comparisons without sacrificing precision.
 
-8. Saving Cleaned Datasets
+**8. Saving Cleaned Datasets**
 - **Action:** Saved cleaned datasets with descriptive names:
 
-`df.to_csv('cleaned_data.csv', index=False)`
+  `df.to_csv('cleaned_data.csv', index=False)`
 
 - **Purpose:** Ensured reproducibility and retained original raw files.
 
