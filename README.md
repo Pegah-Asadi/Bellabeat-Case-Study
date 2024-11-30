@@ -142,12 +142,12 @@ Standardized time formats for temporal analysis.
 
 
 ## 4. Analyze
-In this phase, we performed detailed data exploration and analysis to uncover insights and trends. Below are the steps and technical details of the analysis process.
+In this phase, I performed detailed data exploration and analysis to uncover insights and trends. Below are the steps and technical details of the analysis process.
 
 ### 4.1 Steps Taken
 1. **Import Necessary Libraries**
 
-We started by importing essential Python libraries for data manipulation, analysis, and visualization:
+I started by importing essential Python libraries for data manipulation, analysis, and visualization:
 ```python
 import pandas as pd
 import numpy as np
@@ -171,7 +171,7 @@ Group 1: Records from March 12, 2016, to April 11, 2016.
 
 Group 2: Records from April 12, 2016, to May 12, 2016.
 
-We used `pd.concat()` to combine these datasets into a single DataFrame for comprehensive analysis:
+I used `pd.concat()` to combine these datasets into a single DataFrame for comprehensive analysis:
 ```python
 # Combine datasets row-wise
 combined_df = pd.concat([df1, df2], axis=0, ignore_index=True)
@@ -183,7 +183,7 @@ combined_df = pd.concat([df1, df2], axis=0, ignore_index=True)
 
 4. **Explore the Data**
 
-Basic data exploration helped us understand the dataset structure and identify anomalies:
+Basic data exploration helped me understand the dataset structure and identify anomalies:
 ```python
 # View basic structure
 combined_df.info()
@@ -198,7 +198,7 @@ This provided insights into column types, missing values, and descriptive statis
 
 5. **Merge Datasets (if Necessary)**
 
-For advanced analysis across multiple time granularities, we merged datasets using common keys like ID and Date:
+For advanced analysis across multiple time granularities, I merged datasets using common keys like ID and Date:
 ```python
 # Merge on a single key
 merged_data = pd.merge(dataset1, dataset2, on='common_key')
